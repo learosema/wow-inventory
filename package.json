@@ -1,0 +1,12 @@
+{
+  "name": "wow-inventory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "httpd.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node httpd"
+  },
+  "author": "",
+  "license": "ISC"
+}
