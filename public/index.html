@@ -5,17 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome - Thaleria</title>
   <style>
-    html{background: #111; color: #fff; font-family: sans-serif;}
+    html{background: #439; color: #fff; font-family: sans-serif;}
+    a{color: #3df;}
     body {line-height: 1.4; margin: 1rem; }
+    .grid {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    }
+    .card{background: #111; color: #fff; border-radius: 0.5rem; padding: 1rem;}
   </style>
 </head>
 <body>
   <h1>Welcome to Thaleria's Profile page :)</h1>
 
-  <p>My current active chars on Wild Growth are (click on the links to see the current gear):</p>
-  <ul>
-    <li>Thaleria, Druid Level 16 [<a href="resto.html">Resto Spec (main spec)</a>] [<a href="bear.html">Bear Spec (off spec)</a>]</li>
-    <li>Azraelea, Priest Level 53 [<a href="azraelea.html">Shadow Spec</a>]</li>
-  </ul>
+  <p>My current active chars on Alliance, Wild Growth are (click on the links to see the current gear):</p>
+  <div class="grid">
+    <div class="card">
+    <h2>Thaleria, Druid Level 60</h2>
+
+    <p><span aria-hidden="true">🐻</span>
+      <a href="bear.html">Bear Spec (off spec)</a></p>
+    <p><span aria-hidden="true">🌳</span>
+      <a href="resto.html">Resto Spec (main spec)</a></p>
+    </div>
+    <div class="card">
+      <h2>Azraelea, Priest Level 53</h2>
+    
+      <p><span aria-hidden="true">🧝‍♀️</span>
+        <a href="azraelea.html">Shadow Spec</a></p>
+    </div>
+  </div>
+    
+    
+
 </body>
 </html>
