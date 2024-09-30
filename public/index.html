@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome - Thaleria</title>
   <style>
-    html{background: #326; color: #fff; font-family: sans-serif;}
+    *:focus{outline: 2px solid currentColor;}
+    html{background: #111; color: #fff; font-family: sans-serif;}
     a{color: #3df;}
     body {line-height: 1.4; margin: 1rem; }
     .grid {
@@ -13,7 +14,21 @@
       grid-gap: 1rem;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
     }
-    .card{background: #111; color: #fff; border-radius: 0.5rem; padding: 1rem;}
+    .card{background: #423; color: #fff; border-radius: 0.5rem; padding: 1rem;}
+    @media (hover: hover) {
+  .block-link {
+    position: relative;
+  }
+
+  .block-link a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
   </style>
 </head>
 <body>
@@ -21,18 +36,20 @@
 
   <p>My current active chars on Alliance, Wild Growth are (click on the links to see the current gear):</p>
   <div class="grid">
-    <div class="card">
-    <h2>Thaleria, Druid Level 60</h2>
-
-    <p><span aria-hidden="true">🐻</span>
-      <a href="bear.html">Bear Spec (off spec)</a></p>
-    <p><span aria-hidden="true">🌳</span>
-      <a href="resto.html">Resto Spec (main spec)</a></p>
+    <div class="card block-link">
+      <h2><span aria-hidden="true">🌳</span> Thaleria, Druid Level 60</h2>
+      <p><a href="resto.html">Resto Spec (main spec)</a></p>
     </div>
-    <div class="card">
-      <h2>Azraelea, Priest Level 53</h2>
+
+    <div class="card block-link">
+      <h2><span aria-hidden="true">🐻</span> Thaleria, Druid Level 60</h2>
+      <p><a href="bear.html">Bear Spec (off spec)</a></p>
+    </div>
+
+    <div class="card block-link">
+      <h2><span aria-hidden="true">🧝‍♀️</span> Azraelea, Priest Level 53</h2>
     
-      <p><span aria-hidden="true">🧝‍♀️</span>
+      <p>
         <a href="azraelea.html">Shadow Spec</a></p>
     </div>
   </div>
